@@ -1,6 +1,104 @@
-
-
 *{
-    background-color: rgb(22, 21, 21);
-    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #0f0f14;
+    color: white;
+}
+
+.contenedor{
+    width: 100%;
+    min-height: 100vh;
+}
+
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.header{
+    width: 320px;                 
+    background-color: #0f0f14;       
+    padding: 18px 0 12px 0;       
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid #ff2a2a; 
+}
+
+.header img{
+    width: 170px; 
+}
+
+.main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 120px; 
+}
+
+
+.caja-form{
+    padding-top: 30px;
+    width: 320px;
+    border-radius: 0 0 20px 20px;   
+    border-top: none;               
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+form h1{
+    color: #ff2a2a;
+    margin-bottom: 15px;
+}
+
+
+form label{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+
+#nombre{
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    padding: 0 10px;
+}
+
+
+#pwd{
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    padding: 0 10px;
+}
+
+
+#loginbtn{
+    margin-top: 15px;
+    height: 40px;
+    background-color: transparent;
+    color: #ff2a2a;
+    border: 2px solid #ff2a2a;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+#loginbtn:hover{
+    background-color: #ff2a2a;
+    color: white;
 }
