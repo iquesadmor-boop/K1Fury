@@ -1,3 +1,5 @@
+
+/*AJUESTES GENERALES*/
 *{
     margin: 0;
     padding: 0;
@@ -15,6 +17,7 @@ body{
     min-height: 100vh;
 }
 
+/*HEADER GENERAL ESTILO*/
 
 header{
     width: 100%;
@@ -36,6 +39,29 @@ header{
     width: 170px; 
 }
 
+.header h4{
+    color: white;
+    margin-left: 10px;
+    font-size: 18px;
+    align-self: center;
+}
+
+/*FOOTER GENERAL ESTILO*/
+.footer{
+    width: 320px;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    border-top: 2px solid #ff2a2a;
+}
+
+.footer a{
+    color: #ff2a2a;
+    font-size: 26px;
+    text-decoration: none;
+}
+
+/*LOGIN ESTILO*/
 .main{
     width: 100%;
     display: flex;
@@ -101,4 +127,40 @@ form label{
 #loginbtn:hover{
     background-color: #ff2a2a;
     color: white;
+}
+
+/*MENÚ ESTILO*/
+.mainMenu{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.mainMenu div{
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.button{
+    width: 260px;
+    height: 55px;
+    background-color: #c40000;
+    border: none;
+    border-radius: 10px;
+}
+
+.button a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 55px;
+    text-align: center;
 }
