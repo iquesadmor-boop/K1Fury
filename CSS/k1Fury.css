@@ -4,34 +4,40 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-html{
-    height: 100%;
 }
 
 body{
-    height: 100%;
+    min-height: 100vh;
     background-color: #0f0f14;
     color: white;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .contenedor{
     width: 320px;
-    min-height: 100%;
+    min-height: 100vh;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
 }
-/*HEADER GENERAL ESTILO*/
 
+/*HEADER*/
 header{
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 10px;
+    margin: 10px 0 30px;
+}
+
+.headerTop{
+    width: 100%;
+    height: 120px; 
+    display: flex;
+    justify-content: center;
+    background-color: #0f0f14;
+    padding: 18px 0 12px 0;
+    border-radius: 20px 20px 0 0;
+    border-bottom: 2px solid #ff2a2a;
 }
 
 .headerTop img{
@@ -39,19 +45,8 @@ header{
     height: auto;
 }
 
-.headerTop{
-    width: 320px;
-    height: 120px; 
-    background-color: #0f0f14;
-    display: flex;
-    justify-content: center;
-    padding: 18px 0 12px 0;
-    border-radius: 20px 20px 0 0;
-    border-bottom: 2px solid #ff2a2a;
-}
-
 .headerTitle{
-    width: 320px;
+    width: 100%;
     background-color: #0f0f14;
     text-align: center;
     padding: 8px 0;
@@ -59,23 +54,20 @@ header{
 }
 
 .headerTitle h4{
-    color: white;
     font-size: 12px;
     letter-spacing: 1px;
     font-weight: bold;
 }
 
-/*FOOTER GENERAL ESTILO*/
-
+/*FOOTER*/
 footer{
     margin-top: auto;
-    width: 100%;
     display: flex;
     justify-content: center;
 }
 
 .footer{
-    width: 320px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     padding: 15px 30px;
@@ -88,38 +80,21 @@ footer{
     text-decoration: none;
 }
 
-/*LOGIN ESTILO*/
+/*LOGIN*/
 .main{
-    width: 100%;
+    flex: 1;
     display: flex;
     justify-content: center;
-    margin-top: 120px; 
+    align-items: center;
 }
-
 
 .caja-form{
+    width: 100%;
     padding-top: 30px;
-    width: 320px;
-    border-radius: 0 0 20px 20px;   
-    border-top: none;               
-}
-
-
-form{
-    display: flex;
-    flex-direction: column;
-}
-
-form h1{
-    color: #ff2a2a;
-    margin-bottom: 15px;
-}
-
-
-form label{
-    margin-top: 10px;
-    margin-bottom: 5px;
-    font-size: 14px;
+    border-radius: 25px; 
+    border: #ff2a2a 2px solid;
+    border-radius: 20px;
+    padding: 30px 25px;
 }
 
 
@@ -130,7 +105,6 @@ form label{
     padding: 0 10px;
 }
 
-
 #pwd{
     height: 35px;
     border-radius: 10px;
@@ -138,27 +112,26 @@ form label{
     padding: 0 10px;
 }
 
-
-#loginbtn{
+/*BOTONES*/
+.btn{
     margin-top: 15px;
     height: 40px;
-    background-color: transparent;
+    background-color: #291818;
     color: #ff2a2a;
     border: 2px solid #ff2a2a;
     border-radius: 12px;
     cursor: pointer;
     font-weight: bold;
+    transition: 0.2s ease;
 }
 
-
-#loginbtn:hover{
+.btn:hover{
     background-color: #ff2a2a;
     color: white;
 }
 
-/*MENÚ ESTILO*/
+/*MENÚ*/
 .mainMenu{
-    width: 100%;
     flex: 1;                     
     display: flex;
     justify-content: center;     
@@ -166,14 +139,12 @@ form label{
 }
 
 .mainMenu div{
-    width: 320px;
+    width: 100%;
     display: flex;
-    
     flex-direction: column;
     align-items: center;
     gap: 22px;
 }
-
 
 .button{
     width: 260px;
@@ -185,13 +156,90 @@ form label{
 }
 
 .button a{
-    display: block;
-    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100%;
-    line-height: 65px;
-    text-align: center;
     text-decoration: none;
     color: white;
     font-weight: bold;
     font-size: 18px;
+}
+
+/*LISTA*/
+.mainList{
+    flex: 1;                    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;     
+    align-items: center;
+    gap: 22px;
+}
+
+.mainList div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*LABELS*/
+.selectorEliminar{
+    width: 220px;
+    height: 60px;
+    border-radius: 10px;
+    border: 2px solid #ff2a2a;
+    background-color: #291818;
+    color: white;
+    padding: 5px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+/*SELECTORES*/
+.selector{
+    width: 260px;
+    height: 60px;
+    border-radius: 10px;
+    border: 2px solid #ff2a2a;
+    background-color: #291818;
+    color: white;
+    padding: 5px;
+    font-size: 24px;
+}
+
+.selector option{
+    background-color: #303030;
+    color: white;
+}
+
+/*FORMULARIOS*/
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+form h1{
+    color: #ff2a2a;
+    margin-bottom: 15px;
+}
+
+form label{
+    margin: 10px 0 5px;
+    font-size: 14px;
+}
+
+/*CHECKBOX*/
+.checkboxSelectorEliminar{
+    margin-left: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+/*ENLACES*/
+a{
+    text-decoration: none;
+    color: inherit;
 }
