@@ -124,7 +124,41 @@ footer{
     transition: 0.2s ease;
 }
 
+.btn_result_anotar{
+    margin-top: 15px;
+    height: 40px;
+    background-color: #291818;
+    color: #ff2a2a;
+    border: 2px solid #ff2a2a;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s ease;
+}
+
+.boton_clasificac{
+    margin-top: 15px;
+    height: 40px;
+    background-color: #291818;
+    color: #ff2a2a;
+    border: 2px solid #ff2a2a;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s ease;
+}
+
 .btn:hover{
+    background-color: #ff2a2a;
+    color: white;
+}
+
+.btn_result_anotar:hover{
+    background-color: #ff2a2a;
+    color: white;
+}
+
+.boton_clasificac{
     background-color: #ff2a2a;
     color: white;
 }
@@ -241,4 +275,55 @@ form label{
 a{
     text-decoration: none;
     color: inherit;
+}
+
+/*COMBATES*/
+.mainMatch{                   
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.detalles_box{
+    display: flex;
+    flex-direction: row;
+    align-items: space-around;
+    padding: 10px 20px;
+}
+
+.combate_box{
+    border: 2px solid #ff2a2a;
+    border-radius: 50px;
+    padding: 10px 0px;
+    margin: 0px 20px;
+    display: block;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.combate_box h2{
+    display: flex;
+    justify-content: center;
+    color: #ff2a2a;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ff2a2a;
+}
+
+.peleador_box{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.peleador_box h3{
+    font-size: 18px;
+}
+
+.vs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 15px;
+    font-size: 18px;
+    color: #ff2a2a;
 }
