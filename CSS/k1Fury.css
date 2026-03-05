@@ -1,32 +1,32 @@
-
 /*AJUESTES GENERALES*/
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-html{
+html {
     height: 100%;
 }
 
-body{
+body {
     height: 100%;
     background-color: #0f0f14;
     color: white;
 }
 
-.contenedor{
+.contenedor {
     width: 320px;
     min-height: 100%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
 }
+
 /*HEADER GENERAL ESTILO*/
 
-header{
+header {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -34,14 +34,14 @@ header{
     margin-top: 10px;
 }
 
-.headerTop img{
-    max-width: 180px;  
+.headerTop img {
+    max-width: 180px;
     height: auto;
 }
 
-.headerTop{
+.headerTop {
     width: 320px;
-    height: 120px; 
+    height: 120px;
     background-color: #0f0f14;
     display: flex;
     justify-content: center;
@@ -50,15 +50,15 @@ header{
     border-bottom: 2px solid #ff2a2a;
 }
 
-.headerTitle{
+.headerTitle {
     width: 320px;
     background-color: #0f0f14;
     text-align: center;
     padding: 8px 0;
-    border-bottom: 2px solid #ff2a2a; 
+    border-bottom: 2px solid #ff2a2a;
 }
 
-.headerTitle h4{
+.headerTitle h4 {
     color: white;
     font-size: 12px;
     letter-spacing: 1px;
@@ -67,14 +67,14 @@ header{
 
 /*FOOTER GENERAL ESTILO*/
 
-footer{
+footer {
     margin-top: auto;
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
-.footer{
+.footer {
     width: 320px;
     display: flex;
     justify-content: space-between;
@@ -82,48 +82,48 @@ footer{
     border-top: 2px solid #ff2a2a;
 }
 
-.footer a{
+.footer a {
     color: #ff2a2a;
     font-size: 26px;
     text-decoration: none;
 }
 
 /*LOGIN ESTILO*/
-.main{
+.main {
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 120px; 
+    margin-top: 120px;
 }
 
 
-.caja-form{
+.caja-form {
     padding-top: 30px;
     width: 320px;
-    border-radius: 0 0 20px 20px;   
-    border-top: none;               
+    border-radius: 0 0 20px 20px;
+    border-top: none;
 }
 
 
-form{
+form {
     display: flex;
     flex-direction: column;
 }
 
-form h1{
+form h1 {
     color: #ff2a2a;
     margin-bottom: 15px;
 }
 
 
-form label{
+form label {
     margin-top: 10px;
     margin-bottom: 5px;
     font-size: 14px;
 }
 
 
-#nombre{
+#nombre {
     height: 35px;
     border-radius: 10px;
     border: none;
@@ -131,7 +131,7 @@ form label{
 }
 
 
-#pwd{
+#pwd {
     height: 35px;
     border-radius: 10px;
     border: none;
@@ -139,7 +139,7 @@ form label{
 }
 
 
-#loginbtn{
+#loginbtn {
     margin-top: 15px;
     height: 40px;
     background-color: transparent;
@@ -151,31 +151,30 @@ form label{
 }
 
 
-#loginbtn:hover{
+#loginbtn:hover {
     background-color: #ff2a2a;
     color: white;
 }
 
 /*MENÚ ESTILO*/
-.mainMenu{
+.mainMenu {
     width: 100%;
-    flex: 1;                     
+    flex: 1;
     display: flex;
-    justify-content: center;     
-    align-items: center;         
+    justify-content: center;
+    align-items: center;
 }
 
-.mainMenu div{
+.mainMenu div {
     width: 320px;
     display: flex;
-    
     flex-direction: column;
     align-items: center;
     gap: 22px;
 }
 
 
-.button{
+.button {
     width: 260px;
     height: 65px;
     background-color: #c40000;
@@ -184,7 +183,7 @@ form label{
     cursor: pointer;
 }
 
-.button a{
+.button a {
     display: block;
     width: 100%;
     height: 100%;
@@ -194,4 +193,42 @@ form label{
     color: white;
     font-weight: bold;
     font-size: 18px;
+}
+
+
+/*DESPLEGABLES*/
+.mainList {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.selector {
+    width: 260px;
+    height: 40px;
+    border-radius: 10px;
+    border: 2px solid red;
+    padding: 0 10px;
+    background-color: #291717;
+    color: white;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.selector option {
+    border-radius: 10px;
+    border: 2px solid red;
+    padding: 0 10px;
+    background-color: #303030;
+    color: white;
+}
+
+/*FORMULARIOS*/
+.form {
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
 }
