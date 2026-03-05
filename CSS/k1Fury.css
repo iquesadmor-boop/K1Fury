@@ -125,19 +125,21 @@ footer{
 }
 
 .btn_result_anotar{
-    margin-top: 15px;
-    height: 40px;
+    margin-bottom: 30px;
+    padding: 0px 10px;
+    height: 35px;
     background-color: #291818;
-    color: #ff2a2a;
+    color: white;
+    background-color: #ff2a2a;
     border: 2px solid #ff2a2a;
-    border-radius: 12px;
+    border-radius: 20px;
     cursor: pointer;
     font-weight: bold;
     transition: 0.2s ease;
 }
 
 .boton_clasificac{
-    margin-top: 15px;
+    margin-bottom: 30px;
     height: 40px;
     background-color: #291818;
     color: #ff2a2a;
@@ -281,7 +283,6 @@ a{
 .mainMatch{                   
     display: flex;
     flex-direction: column;
-    gap: 22px;
 }
 
 .detalles_box{
@@ -326,4 +327,10 @@ a{
     margin: 0 15px;
     font-size: 18px;
     color: #ff2a2a;
+}
+
+.box_anotar_resultados{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
 }
